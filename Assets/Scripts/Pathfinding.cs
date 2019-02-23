@@ -97,14 +97,29 @@ public class Pathfinding : MonoBehaviour
 				//Debug.DrawLine(transform.position, Map.GetCellCenterWorld(point), Color.red, 5);
 
 				var tile = Map.GetTile(point);
+				
 				if (tile != null && tile.GetType() == (target))
 				{
-					Debug.Log("FOUND TILE:" + point);
-					//Map.SetTile(point, null);
-					goal = point;
-					goalFound = true;
-					cameFrom[point] = current;
-					break;
+					if(tile is GoalTile && !((GoalTile)tile).pickedUP)
+					{
+						//this is a horrible hack and we should not talk about it.
+						((GoalTile)tile).pickedUP = true;
+						Debug.Log("FOUND TILE:" + point);
+						//Map.SetTile(point, null);
+						goal = point;
+						goalFound = true;
+						cameFrom[point] = current;
+						break;
+					}
+					else if(!(tile is GoalTile))
+					{
+						Debug.Log("FOUND TILE:" + point);
+						//Map.SetTile(point, null);
+						goal = point;
+						goalFound = true;
+						cameFrom[point] = current;
+						break;
+					}
 				}
 
 				if (visisted.TryGetValue(point, out var x) || tile == null || tile.GetType() == typeof(WallTile) || point.x > Width || point.y > Height)

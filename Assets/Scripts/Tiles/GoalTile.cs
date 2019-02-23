@@ -6,17 +6,18 @@ using UnityEngine.Tilemaps;
 
 public class GoalTile : Tile
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	public bool pickedUP = false;
+	public float timeToBeAlive = 10;
+	float timer;
+	// Start is called before the first frame update
+
+	public override bool StartUp(Vector3Int position, ITilemap tilemap, GameObject go)
+	{
+		pickedUP = false;
+		return base.StartUp(position, tilemap, go);
+	}
+
 	
 #if UNITY_EDITOR
 	[MenuItem("Assets/Create/Tiles/GoalTile")]
