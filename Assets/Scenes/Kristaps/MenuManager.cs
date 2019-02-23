@@ -40,7 +40,7 @@ public class MenuManager : MonoBehaviour
 
         audioSource = GetComponent<AudioSource>();
 
-        if (currentScene.name == "Menu")
+        if (currentScene.name == "TitleScreen")
         {
             menuIsActive = true;
             gameHasStarted = false;
