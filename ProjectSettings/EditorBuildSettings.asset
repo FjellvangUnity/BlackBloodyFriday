@@ -15,3 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Kristaps/TestStartGame.unity
     guid: d378cb318572e354e9d8cf18a098f477
   m_configObjects: {}
+
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: c6886d5bafb7d4a74964c093e4dd8bce,
+      type: 2}
