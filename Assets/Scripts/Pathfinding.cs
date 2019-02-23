@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
@@ -10,15 +11,23 @@ public class Pathfinding : MonoBehaviour
 	public int Width = 200;
 	public int Height = 200;
 	public float timeToCompute = 5f;
+	public float speed = 1;
 	float timer = 0;
+	Stack<Vector3> Path = new Stack<Vector3>();
+	int tileCounter = 0; // THIS IS A TEST variable and should be changed
 
 	Vector3 end = new Vector3();
-    // Start is called before the first frame update
-    void Start()
+	private bool pathfound;
+	Vector3 nextPos;
+	Type[] tiles = new Type[] { typeof(GoalTile), typeof(CashPointTile) };
+
+	// Start is called before the first frame update
+	void Start()
     {
 		var mapPos =  Map.WorldToCell(transform.position);
 		var tile = Map.GetTile(mapPos);
-		ComputePath(mapPos);
+		pathfound = ComputePath(mapPos, tiles[0]);
+		nextPos = transform.position;
     }
 
     // Update is called once per frame
@@ -28,12 +37,32 @@ public class Pathfinding : MonoBehaviour
 		var tile = Map.GetTile(mapPos);
 		//Debug.Log(string.Format("Tile: {0}, pos: {1}", tile, mapPos));
 		Debug.DrawLine(transform.position, end);
-		timer += Time.deltaTime;
-		if (timer >= timeToCompute)
+		//if (timer >= timeToCompute)
+		//{
+		//	var pathFound = ComputePath(mapPos);
+		//	timer = 0;
+		//}	
+		if (pathfound )//&& transform.position != end)
 		{
-			ComputePath(mapPos);
-			timer = 0;
-		}	
+			if (Vector3.Distance(transform.position, nextPos) <= 0.1 && Path.Count>0)
+			{
+				nextPos = Path.Pop();
+			}
+			transform.position = Vector3.MoveTowards(transform.position, nextPos, Time.deltaTime * speed);
+			//transform.position += -nextPos * speed * Time.deltaTime;
+			if (Path.Count == 0)
+			{
+				timer += Time.deltaTime;
+				if (timer >= timeToCompute)
+				{
+					tileCounter++;
+					timer = 0;
+					Debug.Log("i: " + tileCounter);
+					pathfound = ComputePath(mapPos, tileCounter % 2 == 0 ? tiles[0] : tiles[1]);
+
+				}
+			}
+		}
     }
 
 
@@ -48,7 +77,7 @@ public class Pathfinding : MonoBehaviour
 		}
 	}
 
-	public bool ComputePath(Vector3Int startPosition)
+	public bool ComputePath(Vector3Int startPosition, Type target)
 	{
 		var frontier = new Queue<Vector3Int>();
 		frontier.Enqueue(startPosition);
@@ -66,9 +95,9 @@ public class Pathfinding : MonoBehaviour
 			foreach (var point in Neightbors(current))
 			{
 				//Debug.DrawLine(transform.position, Map.GetCellCenterWorld(point), Color.red, 5);
-				Debug.Log("checking: " + point);
+
 				var tile = Map.GetTile(point);
-				if (tile != null && tile.GetType() == typeof(GoalTile))
+				if (tile != null && tile.GetType() == (target))
 				{
 					Debug.Log("FOUND TILE:" + point);
 					//Map.SetTile(point, null);
@@ -94,20 +123,22 @@ public class Pathfinding : MonoBehaviour
 
 		var currentPos = goal;
 		var y = Map.WorldToCell(transform.position);
+		Path.Push(Map.GetCellCenterWorld(currentPos));
 		while (currentPos != y)
 		{
 			if(!cameFrom.TryGetValue(currentPos, out var x))
 			{
 				Debug.Log("FALSE");
+				Path = new Stack<Vector3>(); // empty it. dunno if needed
 				return false;
 			}
+			Path.Push(Map.GetCellCenterWorld(x));
 			Debug.DrawLine(Map.GetCellCenterWorld(x), Map.GetCellCenterWorld(currentPos), Color.red, 5);
 
 			currentPos = x;
 		}
 		end = Map.GetCellCenterWorld(goal);
-		return false;	
-
+		return true;	
 	}
 
 }
