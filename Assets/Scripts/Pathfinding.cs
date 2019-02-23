@@ -51,11 +51,10 @@ public class Pathfinding : MonoBehaviour
 			{
 				nextPos = Path.Pop();
 			}
-			var move = Vector3.MoveTowards(transform.position, nextPos, Time.deltaTime * speed);
-			Debug.DrawLine(transform.position, move, Color.gray, 5);
-			transform.position = move;
-			//rig.AddForce(nextPos, ForceMode2D.Impulse);
-			//transform.position += -nextPos * speed * Time.deltaTime;
+			Vector3 relative = nextPos - transform.position;
+			var angle = Mathf.Atan2(relative.y, relative.x) * Mathf.Rad2Deg;
+			transform.rotation = Quaternion.Euler(Vector3.forward * angle);
+			rig.velocity = relative * speed * Time.deltaTime;
 			if (Path.Count == 0)
 			{
 				timer += Time.deltaTime;
