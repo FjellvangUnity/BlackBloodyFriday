@@ -68,7 +68,7 @@ public class Pathfinding : MonoBehaviour
 		}
 		else
 		{
-			//pathfound = ComputePath(mapPos, tiles[0]);
+			pathfound = ComputePath(mapPos, tiles[0]);
 		}
     }
 
@@ -86,6 +86,11 @@ public class Pathfinding : MonoBehaviour
 
 	public bool ComputePath(Vector3Int startPosition, Type target)
 	{
+		if (!GoalTile.AWOKE)
+		{
+			return false;
+		}
+		var goalTilePosition = GoalTile.tiles[UnityEngine.Random.Range(0, GoalTile.Count)];
 		var frontier = new Queue<Vector3Int>();
 		frontier.Enqueue(startPosition);
 		var visisted = new Dictionary<Vector3Int, bool>();
