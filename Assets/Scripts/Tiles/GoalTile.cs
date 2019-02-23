@@ -11,6 +11,7 @@ public class GoalTile : Tile
 	public static List<Vector3Int> tiles = new List<Vector3Int>();
 	public override bool StartUp(Vector3Int position, ITilemap tilemap, GameObject go)
 	{
+		Count++;
 		tiles.Add(position);
 		AWOKE = true;
 		Debug.Log("TILE: " + Count);
