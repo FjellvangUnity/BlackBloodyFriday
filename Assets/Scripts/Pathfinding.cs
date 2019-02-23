@@ -119,7 +119,7 @@ public class Pathfinding : MonoBehaviour
 					var rand = UnityEngine.Random.Range(0f, 1f);
 					if (tile is GoalTile && !goalTilesVisited.Contains(point))//(GoalTile)tile).tileNumber == tilenumber)
 					{
-						Debug.Log("FOUND TILE:" + point);
+						//Debug.Log("FOUND TILE:" + point);
 						//Map.SetTile(point, null);
 						goal = point;
 						goalFound = true;
