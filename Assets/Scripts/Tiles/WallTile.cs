@@ -6,17 +6,9 @@ using UnityEngine.Tilemaps;
 
 public class WallTile : Tile
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	// Start is called before the first frame update
+
 #if UNITY_EDITOR
 	[MenuItem("Assets/Create/Tiles/WallTile")]
 	public static void CreateWaterTile()

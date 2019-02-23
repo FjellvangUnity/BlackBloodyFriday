@@ -20,6 +20,7 @@ public class Pathfinding : MonoBehaviour
 	Vector3 end = new Vector3();
 	private bool pathfound;
 	Vector3 nextPos;
+	List<Vector3Int> goalTilesVisited = new List<Vector3Int>();
 	Type[] tiles = new Type[] { typeof(GoalTile), typeof(CashPointTile) };
 
 	// Start is called before the first frame update
@@ -68,6 +69,10 @@ public class Pathfinding : MonoBehaviour
 				}
 			}
 		}
+		else
+		{
+			//pathfound = ComputePath(mapPos, tiles[0]);
+		}
     }
 
 
@@ -90,6 +95,11 @@ public class Pathfinding : MonoBehaviour
 		var cameFrom = new Dictionary<Vector3Int, Vector3Int>();
 		Vector3Int goal = new Vector3Int();
 		var goalFound = false;
+		var tilenumber = 1;
+		if (target == typeof(GoalTile))
+		{
+			tilenumber = UnityEngine.Random.Range(1, GoalTile.Count);
+		}
 
 		Debug.Log("starting");
 		while (frontier.Count > 0 && !goalFound)
@@ -104,12 +114,29 @@ public class Pathfinding : MonoBehaviour
 				var tile = Map.GetTile(point);
 				if (tile != null && tile.GetType() == (target))
 				{
-					Debug.Log("FOUND TILE:" + point);
-					//Map.SetTile(point, null);
-					goal = point;
-					goalFound = true;
-					cameFrom[point] = current;
-					break;
+					var rand = UnityEngine.Random.Range(0f, 1f);
+					if (tile is GoalTile && !goalTilesVisited.Contains(point))//(GoalTile)tile).tileNumber == tilenumber)
+					{
+						Debug.Log("FOUND TILE:" + point);
+						//Map.SetTile(point, null);
+						goal = point;
+						goalFound = true;
+						cameFrom[point] = current;
+						goalTilesVisited.Add(point);
+						if (goalTilesVisited.Count == GoalTile.Count-1)
+						{
+							goalTilesVisited = new List<Vector3Int>();
+						}
+						break;
+					} else if(!(tile is GoalTile))
+					{
+						Debug.Log("FOUND TILE:" + point);
+						//Map.SetTile(point, null);
+						goal = point;
+						goalFound = true;
+						cameFrom[point] = current;
+						break;
+					}
 				}
 
 				if (visisted.TryGetValue(point, out var x) || tile == null || tile.GetType() == typeof(WallTile) || point.x > Width || point.y > Height)

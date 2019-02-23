@@ -21,6 +21,7 @@ public class GroundTile : Tile
 	[MenuItem("Assets/Create/Tiles/GroundTile")]
 	public static void CreateWaterTile()
 	{
+		
 		string path = EditorUtility.SaveFilePanelInProject("Save Groundtile", "New Groundtile", "asset", "SaveGroundtile", "Assets");
 		if (path == null)
 		{
