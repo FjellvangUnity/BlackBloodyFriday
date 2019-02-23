@@ -9,6 +9,8 @@ public class Pathfinding : MonoBehaviour
 	public Tilemap Map;
 	public int Width = 200;
 	public int Height = 200;
+	public float timeToCompute = 5f;
+	float timer = 0;
 
 	Vector3 end = new Vector3();
     // Start is called before the first frame update
@@ -26,8 +28,13 @@ public class Pathfinding : MonoBehaviour
 		var tile = Map.GetTile(mapPos);
 		//Debug.Log(string.Format("Tile: {0}, pos: {1}", tile, mapPos));
 		Debug.DrawLine(transform.position, end);
+		timer += Time.deltaTime;
+		if (timer >= timeToCompute)
+		{
+			ComputePath(mapPos);
+			timer = 0;
+		}	
     }
-
 
 
 	public IEnumerable<Vector3Int> Neightbors(Vector3Int current)
@@ -58,20 +65,22 @@ public class Pathfinding : MonoBehaviour
 
 			foreach (var point in Neightbors(current))
 			{
-				Debug.DrawLine(transform.position, Map.GetCellCenterWorld(point), Color.red, 5);
+				//Debug.DrawLine(transform.position, Map.GetCellCenterWorld(point), Color.red, 5);
 				Debug.Log("checking: " + point);
-				if (Map.GetTile(point) != null)
+				var tile = Map.GetTile(point);
+				if (tile != null && tile.GetType() == typeof(GoalTile))
 				{
 					Debug.Log("FOUND TILE:" + point);
-					Map.SetTile(point, null);
+					//Map.SetTile(point, null);
 					goal = point;
 					goalFound = true;
+					cameFrom[point] = current;
 					break;
 				}
 
-				if (visisted.TryGetValue(point, out var x) || point.x > Width || point.y > Height)
+				if (visisted.TryGetValue(point, out var x) || tile == null || tile.GetType() == typeof(WallTile) || point.x > Width || point.y > Height)
 				{
-					// we've been here or we are out of bounds
+					// out of bounds, we've been here, or we hit a wall
 					continue;
 				}
 
@@ -81,15 +90,21 @@ public class Pathfinding : MonoBehaviour
 				cameFrom[point] = current;
 			}
 			//backtrack
-			//var currentPos = goal;
-			//while(currentPos != Map.WorldToCell(transform.position))
-			//{
-			//	Debug.DrawLine(Map.WorldToCell(cameFrom[currentPos]), Map.WorldToCell(currentPos));
-
-			//	currentPos = cameFrom[currentPos];
-			//}
 		}
 
+		var currentPos = goal;
+		var y = Map.WorldToCell(transform.position);
+		while (currentPos != y)
+		{
+			if(!cameFrom.TryGetValue(currentPos, out var x))
+			{
+				Debug.Log("FALSE");
+				return false;
+			}
+			Debug.DrawLine(Map.GetCellCenterWorld(x), Map.GetCellCenterWorld(currentPos), Color.red, 5);
+
+			currentPos = x;
+		}
 		end = Map.GetCellCenterWorld(goal);
 		return false;	
 
