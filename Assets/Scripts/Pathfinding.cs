@@ -52,7 +52,7 @@ public class Pathfinding : MonoBehaviour
 			Vector3 relative = nextPos - transform.position;
 			var angle = Mathf.Atan2(relative.y, relative.x) * Mathf.Rad2Deg;
 			transform.rotation = Quaternion.Euler(Vector3.forward * angle);
-			rig.velocity = relative * speed * Time.deltaTime;
+			rig.AddForce(relative * speed * Time.deltaTime, ForceMode2D.Impulse);
 			if (Path.Count == 0)
 			{
 				timer += Time.deltaTime;
