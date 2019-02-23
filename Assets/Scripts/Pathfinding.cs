@@ -11,8 +11,10 @@ public class Pathfinding : MonoBehaviour
 	public int Width = 200;
 	public int Height = 200;
 	public float timeToCompute = 5f;
+	public float timeToFindNewPos = 5f;
 	public float speed = 1;
 	float timer = 0;
+	float timerToFindNewPos = 0f;
 	Stack<Vector3> Path = new Stack<Vector3>();
 	int tileCounter = 0; // THIS IS A TEST variable and should be changed
 	Rigidbody2D rig;
@@ -38,23 +40,19 @@ public class Pathfinding : MonoBehaviour
     {
 		var mapPos =  Map.WorldToCell(transform.position);
 		var tile = Map.GetTile(mapPos);
-		//Debug.Log(string.Format("Tile: {0}, pos: {1}", tile, mapPos));
-		//Debug.DrawLine(transform.position, end);
-		//if (timer >= timeToCompute)
-		//{
-		//	var pathFound = ComputePath(mapPos);
-		//	timer = 0;
-		//}	
+
 		if (pathfound )//&& transform.position != end)
 		{
-			if (Vector3.Distance(transform.position, nextPos) <= 1 && Path.Count>0)
+			timerToFindNewPos += Time.deltaTime;
+			if ((timerToFindNewPos > timeToFindNewPos || Vector3.Distance(transform.position, nextPos) <= 1) && Path.Count>0)
 			{
+				timerToFindNewPos = 0;
 				nextPos = Path.Pop();
 			}
 			Vector3 relative = nextPos - transform.position;
 			var angle = Mathf.Atan2(relative.y, relative.x) * Mathf.Rad2Deg;
 			transform.rotation = Quaternion.Euler(Vector3.forward * angle);
-			rig.velocity = relative * speed * Time.deltaTime;
+			rig.AddForce(relative * speed * Time.deltaTime, ForceMode2D.Impulse);
 			if (Path.Count == 0)
 			{
 				timer += Time.deltaTime;
@@ -63,7 +61,7 @@ public class Pathfinding : MonoBehaviour
 					tileCounter++;
 					timer = 0;
 
-					pathfound = ComputePath(mapPos, tileCounter % 2 == 0 ? tiles[0] : tiles[1]);
+					pathfound = ComputePath(mapPos, tiles[UnityEngine.Random.Range(0,1)]);
 
 				}
 			}
