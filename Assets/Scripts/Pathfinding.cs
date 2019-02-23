@@ -15,6 +15,7 @@ public class Pathfinding : MonoBehaviour
 	float timer = 0;
 	Stack<Vector3> Path = new Stack<Vector3>();
 	int tileCounter = 0; // THIS IS A TEST variable and should be changed
+	Rigidbody2D rig;
 
 	Vector3 end = new Vector3();
 	private bool pathfound;
@@ -28,6 +29,7 @@ public class Pathfinding : MonoBehaviour
 		var tile = Map.GetTile(mapPos);
 		pathfound = ComputePath(mapPos, tiles[0]);
 		nextPos = transform.position;
+		rig = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -36,7 +38,7 @@ public class Pathfinding : MonoBehaviour
 		var mapPos =  Map.WorldToCell(transform.position);
 		var tile = Map.GetTile(mapPos);
 		//Debug.Log(string.Format("Tile: {0}, pos: {1}", tile, mapPos));
-		Debug.DrawLine(transform.position, end);
+		//Debug.DrawLine(transform.position, end);
 		//if (timer >= timeToCompute)
 		//{
 		//	var pathFound = ComputePath(mapPos);
@@ -44,11 +46,14 @@ public class Pathfinding : MonoBehaviour
 		//}	
 		if (pathfound )//&& transform.position != end)
 		{
-			if (Vector3.Distance(transform.position, nextPos) <= 0.1 && Path.Count>0)
+			if (Vector3.Distance(transform.position, nextPos) <= 1 && Path.Count>0)
 			{
 				nextPos = Path.Pop();
 			}
-			transform.position = Vector3.MoveTowards(transform.position, nextPos, Time.deltaTime * speed);
+			var move = Vector3.MoveTowards(transform.position, nextPos, Time.deltaTime * speed);
+			Debug.DrawLine(transform.position, move, Color.gray, 5);
+			transform.position = move;
+			//rig.AddForce(nextPos, ForceMode2D.Impulse);
 			//transform.position += -nextPos * speed * Time.deltaTime;
 			if (Path.Count == 0)
 			{
@@ -57,7 +62,7 @@ public class Pathfinding : MonoBehaviour
 				{
 					tileCounter++;
 					timer = 0;
-					Debug.Log("i: " + tileCounter);
+
 					pathfound = ComputePath(mapPos, tileCounter % 2 == 0 ? tiles[0] : tiles[1]);
 
 				}
@@ -133,7 +138,7 @@ public class Pathfinding : MonoBehaviour
 				return false;
 			}
 			Path.Push(Map.GetCellCenterWorld(x));
-			Debug.DrawLine(Map.GetCellCenterWorld(x), Map.GetCellCenterWorld(currentPos), Color.red, 5);
+			//Debug.DrawLine(Map.GetCellCenterWorld(x), Map.GetCellCenterWorld(currentPos), Color.red, 5);
 
 			currentPos = x;
 		}

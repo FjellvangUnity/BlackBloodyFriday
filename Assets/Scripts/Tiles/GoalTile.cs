@@ -6,18 +6,7 @@ using UnityEngine.Tilemaps;
 
 public class GoalTile : Tile
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-	
 #if UNITY_EDITOR
 	[MenuItem("Assets/Create/Tiles/GoalTile")]
 	public static void CreateWaterTile()
