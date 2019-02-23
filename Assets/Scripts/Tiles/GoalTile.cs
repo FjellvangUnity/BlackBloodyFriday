@@ -14,7 +14,7 @@ public class GoalTile : Tile
 		Count++;
 		tiles.Add(position);
 		AWOKE = true;
-		Debug.Log("TILE: " + Count);
+		//Debug.Log("TILE: " + Count);
 		return base.StartUp(position, tilemap, go);
 	}
 
