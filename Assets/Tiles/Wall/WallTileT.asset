@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a981329f58eff84695969e092734beb, type: 3}
-  m_Name: New Groundtile
+  m_Script: {fileID: 11500000, guid: c94b53579de2a2c4a960e46768eab62a, type: 3}
+  m_Name: WallTileT
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300044, guid: 563fcab5ceb1ab248bd91608b6061258, type: 3}
+  m_Sprite: {fileID: 21300012, guid: 599ce0398c35f144abfeeb3d3bbcb42e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
