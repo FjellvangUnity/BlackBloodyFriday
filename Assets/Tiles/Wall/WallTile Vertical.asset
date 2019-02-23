@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c94b53579de2a2c4a960e46768eab62a, type: 3}
-  m_Name: WallTile
+  m_Name: WallTile Vertical
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300000, guid: 0da01d682c57c5642b7d583063f23f77, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300024, guid: 599ce0398c35f144abfeeb3d3bbcb42e, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
     e01: 0
