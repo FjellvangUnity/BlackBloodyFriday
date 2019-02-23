@@ -8,20 +8,15 @@ public class PlayerMovement : MonoBehaviour
 {
 
     [SerializeField]
-    private float moveForce = 100f;
+    private float moveForce = 1f;
     [SerializeField]
-    private float hitForce = 100f;
+    private float hitForce = 10f;
     private bool alive = true;
     Rigidbody2D rb;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-    }
-
-    private void Start()
-    {
-        //_soundMaker = GetComponent<SoundMaker>();
     }
 
     private void FixedUpdate()
@@ -58,8 +53,4 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-    void OnCollisionEnter()
-    {
-        //_soundMaker.PlayHitSound();
-    }
 }
