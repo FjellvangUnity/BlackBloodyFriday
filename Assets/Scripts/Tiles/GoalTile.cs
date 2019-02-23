@@ -13,7 +13,7 @@ public class GoalTile : Tile
 		Count++;
 		tileNumber = Count + 0;
 		tiles.Add(this);
-		Debug.Log("TILE: " + Count);
+		//Debug.Log("TILE: " + Count);
 		return base.StartUp(position, tilemap, go);
 	}
 	public int tileNumber;

@@ -12,18 +12,25 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private float hitForce = 10f;
     private bool alive = true;
-    Rigidbody2D rb;
+    Rigidbody2D rb, enemyRb;
 
-    private Vector2 currentDirection;
+    private Vector3 currentDirection;
+    RaycastHit2D hit;
+
+    private void Start()
+    {
+        currentDirection = new Vector2(1, 0);
+    }
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void Update()
     {
-        Debug.Log("OnCollisionEnter2D");
+        currentDirection = transform.InverseTransformDirection(rb.velocity);
+        //Debug.DrawLine(transform.position, transform.position + currentDirection.normalized * 5.0f, Color.red);
     }
 
     private void FixedUpdate()
@@ -33,34 +40,44 @@ public class PlayerMovement : MonoBehaviour
         
             if (Input.GetKey(KeyCode.UpArrow))
             {
-                currentDirection = Vector2.up;
                 rb.AddForce(Vector2.up * moveForce);
             }
             if (Input.GetKey(KeyCode.DownArrow))
             {
-                currentDirection = Vector2.down;
+              
                 rb.AddForce(Vector2.down * moveForce);
-
             }
             if (Input.GetKey(KeyCode.RightArrow))
             {
-                currentDirection = Vector2.right;
+              
                 rb.AddForce(Vector2.right * moveForce);
 
             }
             if (Input.GetKey(KeyCode.LeftArrow))
             {
-                currentDirection = Vector2.left;
+             
                 rb.AddForce(Vector2.left * moveForce);
 
             }
 
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                rb.AddForce(currentDirection * hitForce);
+                hit = Physics2D.Raycast(transform.position, currentDirection);
+                if (hit.collider != null)
+                {
+                    enemyRb = hit.transform.GetComponent<Rigidbody2D>();
+                    enemyRb.AddForce(currentDirection * hitForce);
+                    Debug.Log(enemyRb.name);
+                }
             }
         }
 
     }
+
+    //private void OnDrawGizmos()
+    //{
+    //    Gizmos.DrawLine(transform.position, currentDirection*5.0f);
+        
+    //}
 
 }
