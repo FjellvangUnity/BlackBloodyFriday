@@ -7,16 +7,15 @@ using UnityEngine.Tilemaps;
 public class GoalTile : Tile
 {
 	public static int Count = 0;
-	public static List<GoalTile> tiles = new List<GoalTile>();
+	public static bool AWOKE = false;
+	public static List<Vector3Int> tiles = new List<Vector3Int>();
 	public override bool StartUp(Vector3Int position, ITilemap tilemap, GameObject go)
 	{
-		Count++;
-		tileNumber = Count + 0;
-		tiles.Add(this);
+		tiles.Add(position);
+		AWOKE = true;
 		Debug.Log("TILE: " + Count);
 		return base.StartUp(position, tilemap, go);
 	}
-	public int tileNumber;
 
 	
 #if UNITY_EDITOR
