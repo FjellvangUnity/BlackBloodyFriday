@@ -84,24 +84,20 @@ public class Pathfinding : MonoBehaviour
 		}
 	}
 
-	public bool ComputePath(Vector3Int startPosition, Type target)
+	public bool ComputePath(Vector3Int startPosition, Type toFind)
 	{
-		//if (!GoalTile.AWOKE)
-		//{
-		//	return false;
-		//}
-		//var goalTilePosition = GoalTile.tiles[UnityEngine.Random.Range(0, GoalTile.Count)];
+		if (!GoalTile.AWOKE)
+		{
+			Debug.Log("NOT AWAKE");
+			return false;
+		}
+		var goalTilePosition = GoalTile.tiles[UnityEngine.Random.Range(0, GoalTile.Count)];
 		var frontier = new Queue<Vector3Int>();
 		frontier.Enqueue(startPosition);
 		var visisted = new Dictionary<Vector3Int, bool>();
 		var cameFrom = new Dictionary<Vector3Int, Vector3Int>();
 		Vector3Int goal = new Vector3Int();
 		var goalFound = false;
-		var tilenumber = 1;
-		if (target == typeof(GoalTile))
-		{
-			tilenumber = UnityEngine.Random.Range(1, GoalTile.Count);
-		}
 
 		Debug.Log("starting");
 		while (frontier.Count > 0 && !goalFound)
@@ -114,31 +110,31 @@ public class Pathfinding : MonoBehaviour
 				//Debug.DrawLine(transform.position, Map.GetCellCenterWorld(point), Color.red, 5);
 
 				var tile = Map.GetTile(point);
-				if (tile != null && tile.GetType() == (target))
+				if (tile != null && point == goalTilePosition)
 				{
-					var rand = UnityEngine.Random.Range(0f, 1f);
-					if (tile is GoalTile && !goalTilesVisited.Contains(point))//(GoalTile)tile).tileNumber == tilenumber)
-					{
+					//var rand = UnityEngine.Random.Range(0f, 1f);
+					//if (tile is GoalTile && !goalTilesVisited.Contains(point))//(GoalTile)tile).tileNumber == tilenumber)
+					//{
 						//Debug.Log("FOUND TILE:" + point);
 						//Map.SetTile(point, null);
-						goal = point;
-						goalFound = true;
-						cameFrom[point] = current;
-						goalTilesVisited.Add(point);
-						if (goalTilesVisited.Count == GoalTile.Count-1)
-						{
-							goalTilesVisited = new List<Vector3Int>();
-						}
-						break;
-					} else if(!(tile is GoalTile))
+					goal = point;
+					goalFound = true;
+					cameFrom[point] = current;
+					goalTilesVisited.Add(point);
+					if (goalTilesVisited.Count == GoalTile.Count-1)
 					{
-						Debug.Log("FOUND TILE:" + point);
-						//Map.SetTile(point, null);
-						goal = point;
-						goalFound = true;
-						cameFrom[point] = current;
-						break;
+						goalTilesVisited = new List<Vector3Int>();
 					}
+					break;
+					//} else if(!(tile is GoalTile))
+					//{
+					//	Debug.Log("FOUND TILE:" + point);
+					//	//Map.SetTile(point, null);
+					//	goal = point;
+					//	goalFound = true;
+					//	cameFrom[point] = current;
+					//	break;
+					//}
 				}
 
 				if (visisted.TryGetValue(point, out var x) || tile == null || tile.GetType() == typeof(WallTile) || point.x > Width || point.y > Height)
