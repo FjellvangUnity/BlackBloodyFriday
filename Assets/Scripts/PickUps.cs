@@ -11,7 +11,7 @@ public class PickUps : MonoBehaviour
         if (playerMovementController != null)
         {
             ScoreManager.Instance.AddValue(itemValue);
-            Destroy(this.gameObject);
+            Destroy(this.gameObject,0.5f);
         }
     }
 
