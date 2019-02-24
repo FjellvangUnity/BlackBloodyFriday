@@ -4,7 +4,24 @@ using UnityEngine;
 
 public class ScoreManager : MonoBehaviour
 {
+    //SINGLETON
+    public static ScoreManager Instance { get; private set; }
 
+    private void Awake()
+    {
+        if (Instance != null)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            Instance = this;
+            //DontDestroyOnLoad(gameObject);
+        }
+    }
+
+
+    public static int valuePickedUp = 0;
 
     public static int score = 0;
 
@@ -25,4 +42,16 @@ public class ScoreManager : MonoBehaviour
             score++;
         }
     }
+
+    public void AddValue(int value)
+    {
+        valuePickedUp += value;
+    }
+
+    public void BuyItems()
+    {
+        score -= valuePickedUp;
+        valuePickedUp = 0;
+    }
+
 }
