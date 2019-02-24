@@ -69,11 +69,11 @@ public class PlayerMovement : MonoBehaviour
 
             Debug.Log(rb.velocity.normalized);
 
-            Debug.DrawRay(this.transform.position, currentDirection, Color.red, 2.0f);
+            Debug.DrawRay(this.transform.position, relative, Color.red, 2.0f);
 
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                hit = Physics2D.Raycast(this.transform.position, currentDirection, 1.5f, LayerMask.GetMask("Enemy"));
+                hit = Physics2D.Raycast(this.transform.position, relative, 1.5f, LayerMask.GetMask("Enemy"));
 
 
                 if (hit.collider != null)
