@@ -44,7 +44,6 @@ public class ScoreManager : MonoBehaviour
 
             score++;
 
-            Debug.Log("score: " + score);
         }
     }
 
