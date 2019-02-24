@@ -5,9 +5,11 @@ using UnityEngine;
 public class CashRegister : MonoBehaviour
 {
 	AudioSource audioSource;
+	Animator animator;
 	private void Awake()
 	{
 		audioSource = GetComponentInParent<AudioSource>();
+		animator = GetComponentInParent<Animator>();
 	}
 	// Start is called before the first frame update
 	private void OnTriggerEnter2D(Collider2D collision)
@@ -18,6 +20,7 @@ public class CashRegister : MonoBehaviour
 			if (ScoreManager.Instance.totalItems > 0)
 			{
 				audioSource.Play();
+				animator.SetTrigger("Trigger");
 
 			}
             ScoreManager.Instance.totalItems = 0;
