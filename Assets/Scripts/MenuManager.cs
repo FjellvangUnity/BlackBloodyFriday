@@ -100,8 +100,7 @@ public class MenuManager : MonoBehaviour
         gameHasStarted = true;
         gameIsOver = false;
         SceneManager.LoadScene("Level1");
-        ScoreManager.score = 0;
-        
+        //ScoreManager.Instance.score = 100;
 
     }
 
