@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4286508204681475818}
   - component: {fileID: 4286508204681475820}
   - component: {fileID: 4286508204681475821}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SpriteSheetv!_12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: 8624084928109528965}
   - component: {fileID: 8624084928109528970}
   - component: {fileID: 8624084928109528966}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HotChick
   m_TagString: Untagged
   m_Icon: {fileID: 0}

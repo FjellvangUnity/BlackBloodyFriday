@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 621729138574172716}
   - component: {fileID: 621729138574172707}
   - component: {fileID: 621729138574172719}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   - component: {fileID: 5150760686944277427}
   - component: {fileID: 5150760686944277325}
   - component: {fileID: 5150760686944277426}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BRO ENEMY
   m_TagString: Untagged
   m_Icon: {fileID: 0}
