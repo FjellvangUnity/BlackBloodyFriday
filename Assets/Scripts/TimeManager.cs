@@ -14,13 +14,17 @@ public class TimeManager : MonoBehaviour
     public Text timerText;
 
     AudioSource audioSource;
+    private bool activated = false;
 
-
+    private void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+        activated = false;
+    }
 
     void Start()
     {
         gameOverCanvas.SetActive(false);
-        audioSource = GetComponent<AudioSource>();
     }
 
 
@@ -34,9 +38,13 @@ public class TimeManager : MonoBehaviour
             timerText.text = timer.ToString("n0");
         }
 
-        if(timer <= 9)
+        if(timer <= 9.0f)
         {
+            if(!activated)
+            {
             audioSource.Play();
+            activated = true;
+            }
         }
 
         if (timer <= 0) {
