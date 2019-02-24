@@ -24,7 +24,7 @@ public class ScoreManager : MonoBehaviour
     public int valuePickedUp = 0;
 
     public int totalItems = 0;
-    public int maxItems = 3;
+    public int maxItems = 10;
 
     public int score = 100;
 
@@ -35,17 +35,6 @@ public class ScoreManager : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetMouseButtonDown(0) && !MenuManager.gameIsOver) {
-
-            print("clicked");
-
-            score++;
-
-        }
-    }
 
     public void AddValue(int value)
     {
