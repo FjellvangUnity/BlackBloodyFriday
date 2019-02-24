@@ -49,7 +49,7 @@ public class MenuManager : MonoBehaviour
             continueButton.SetActive(false);
             highScoreButton.SetActive(true);
         }
-        else if (currentScene.name == "TestStartGame")
+        else if (currentScene.name == "Level1")
         {
 
             GameObject.Find("Menu").SetActive(true);
@@ -99,7 +99,7 @@ public class MenuManager : MonoBehaviour
     public void StartGame() {
         gameHasStarted = true;
         gameIsOver = false;
-        SceneManager.LoadScene("TestStartGame");
+        SceneManager.LoadScene("Level1");
         ScoreManager.score = 0;
         
 
@@ -117,7 +117,7 @@ public class MenuManager : MonoBehaviour
 
     public void RestartGame() {
         
-        SceneManager.LoadScene("TestStartGame");
+        SceneManager.LoadScene("Level1");
         gameIsOver = false;
         //mainMenuCanvas.SetActive(false);
     }
