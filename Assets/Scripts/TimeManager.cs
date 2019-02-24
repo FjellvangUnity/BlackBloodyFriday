@@ -13,11 +13,14 @@ public class TimeManager : MonoBehaviour
     public float timer = 5f;
     public Text timerText;
 
+    AudioSource audioSource;
+
 
 
     void Start()
     {
         gameOverCanvas.SetActive(false);
+        audioSource = GetComponent<AudioSource>();
     }
 
 
@@ -29,6 +32,11 @@ public class TimeManager : MonoBehaviour
             MenuManager.gameIsOver = false;
             timer -= Time.deltaTime;
             timerText.text = timer.ToString("n0");
+        }
+
+        if(timer <= 9)
+        {
+            audioSource.Play();
         }
 
         if (timer <= 0) {

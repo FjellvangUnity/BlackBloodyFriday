@@ -8,9 +8,9 @@ public class PlayerMovement : MonoBehaviour
 {
 
     [SerializeField]
-    private float moveForce = 1f;
+    private float moveForce = 10f;
     [SerializeField]
-    private float hitForce = 10f;
+    private float hitForce = 50f;
     //[SerializeField]
     //private LayerMask layerMask;
     private bool alive = true;
