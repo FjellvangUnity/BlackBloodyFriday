@@ -43,8 +43,44 @@ public class TimeManager : MonoBehaviour
             MenuManager.gameIsOver = true;
             gameOverCanvas.SetActive(true);
             timerText.text = 0.ToString("n0");
-            gameOverText.text = String.Format("The store is closed! \n you are {0}$ in debt!!!", ScoreManager.Instance.score);
+			gameOverText.text = GetText(ScoreManager.Instance.score);// String.Format("The store is closed! \n you are {0}$ in debt!!!", ScoreManager.Instance.score);
         }
 
     }
+
+	string GetText(int score)
+	{
+		if (score == 100)
+		{
+			return "The store is closed. But you didnt spend any money ????";
+		}
+		else if (score > -1500)
+		{
+			return string.Format("POOR!\n You suck! you almost didn't save any money. You're only {0} in debt", score);
+		}
+
+		else if (score > -3000)
+		{
+			return string.Format("BROKE!\n Hmm - you could have saved alot more\n You're {0} in debt", score);
+		}
+		else
+		{
+			return string.Format("BANKRUPT!\n Congratulations, you totally saved TONS of money!\n You will never pay back the {0} you;re in debt", score);
+		}
+	}
+
+
+	/*
+	 * BANKRUPT!
+CONGRATULATIONS - You totally saved TONS of money!
+
+RUINED!
+Its OK - You saved A LOT of money!��
+
+BROKE!
+Hmmm - You could have saved much more!��
+
+POOR!
+You suck! You almost didn't save any money.
+	 * */
 }
