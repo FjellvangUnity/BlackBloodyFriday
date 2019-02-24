@@ -10,6 +10,6 @@ public class CashRegister : MonoBehaviour
 		if (collision.tag.Equals("Player"))
 		{
 			Debug.Log("PLAYER TRIGGERED");
-		}
+	}
 	}
 }
