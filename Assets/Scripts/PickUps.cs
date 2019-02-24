@@ -10,8 +10,12 @@ public class PickUps : MonoBehaviour
         var playerMovementController = other.GetComponentInParent<PlayerMovement>();
         if (playerMovementController != null)
         {
+            if(ScoreManager.Instance.totalItems < ScoreManager.Instance.maxItems)
+            { 
             ScoreManager.Instance.AddValue(itemValue);
+            ScoreManager.Instance.totalItems++;
             Destroy(this.gameObject,0.5f);
+            }
         }
     }
 

@@ -23,6 +23,9 @@ public class ScoreManager : MonoBehaviour
 
     public int valuePickedUp = 0;
 
+    public int totalItems = 0;
+    public int maxItems = 3;
+
     public int score = 100;
 
 
@@ -48,6 +51,7 @@ public class ScoreManager : MonoBehaviour
     public void AddValue(int value)
     {
         valuePickedUp += value;
+        totalItems++;
     }
 
     public void BuyItems()

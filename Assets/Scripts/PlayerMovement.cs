@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     //private LayerMask layerMask;
     private bool alive = true;
     Rigidbody2D rb, enemyRb;
+    AudioSource audioSource;
 
     private Vector3 currentDirection;
     RaycastHit2D hit;
@@ -30,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
     }
 
 
@@ -82,6 +84,7 @@ public class PlayerMovement : MonoBehaviour
                     rb.AddForce(-rb.velocity, ForceMode2D.Impulse);
                     enemyRb = hit.transform.GetComponent<Rigidbody2D>();
                     enemyRb.AddForce(currentDirection * hitForce, ForceMode2D.Impulse);
+                    audioSource.Play();
                     hit = new RaycastHit2D();
                     //Debug.Log(enemyRb.name);
                 }
