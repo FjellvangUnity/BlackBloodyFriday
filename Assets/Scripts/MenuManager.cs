@@ -61,7 +61,8 @@ public class MenuManager : MonoBehaviour
             startGameButton.SetActive(false);
             highScoreButton.SetActive(false);
 
-            //audioSource.pl(backgroundMusic);
+			//audioSource.volume = 0.05f;
+   //         audioSource.PlayOneShot(backgroundMusic, 2);
 
         }
 
