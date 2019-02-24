@@ -21,9 +21,9 @@ public class ScoreManager : MonoBehaviour
     }
 
 
-    public static int valuePickedUp = 0;
+    public int valuePickedUp = 0;
 
-    public int score = 0;
+    public int score = 100;
 
 
     // Start is called before the first frame update
@@ -40,6 +40,8 @@ public class ScoreManager : MonoBehaviour
             print("clicked");
 
             score++;
+
+            Debug.Log("score: " + score);
         }
     }
 
