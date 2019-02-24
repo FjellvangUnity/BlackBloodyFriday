@@ -18,10 +18,13 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector3 currentDirection;
     RaycastHit2D hit;
+	Animator animator;
+	Vector3 relative = Vector3.right;
 
     private void Start()
     {
         currentDirection = new Vector2(1, 0);
+		animator = GetComponentInChildren<Animator>();
     }
 
     void Awake()
@@ -29,51 +32,48 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    private void Update()
-    {
-        //currentDirection = transform.InverseTransformDirection(rb.velocity);
-
-        //Debug.DrawLine(transform.position, transform.position + currentDirection.normalized * 5.0f, Color.red);
-
-
-
-    }
 
     private void FixedUpdate()
     {
         if (alive)
         {
-
-            if (Input.GetKey(KeyCode.UpArrow))
+			var horizontal = Input.GetAxisRaw("Horizontal");
+			var vertical = Input.GetAxisRaw("Vertical");
+			animator.SetFloat("moving", rb.velocity.magnitude);
+			Debug.Log(string.Format("hor {0}, vert{1}", horizontal, vertical));
+            if (vertical > 0)
             {
                 rb.AddForce(Vector2.up * moveForce);
+				relative = currentDirection;
             }
-            if (Input.GetKey(KeyCode.DownArrow))
+            if (vertical < 0)
             {
                 rb.AddForce(Vector2.down * moveForce);
+				relative = currentDirection;
             }
-            if (Input.GetKey(KeyCode.RightArrow))
+            if (horizontal > 0)
             {
                 rb.AddForce(Vector2.right * moveForce);
+                relative = currentDirection;
             }
-            if (Input.GetKey(KeyCode.LeftArrow))
+            if (horizontal < 0)
             {
                 rb.AddForce(Vector2.left * moveForce);
+				relative = currentDirection;
             }
 
             currentDirection = rb.velocity.normalized;
             //transform.rotation = Quaternion.Euler(currentDirection.x, 0, currentDirection.y);
-            Vector3 relative = currentDirection;
             var angle = Mathf.Atan2(relative.y, relative.x) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.Euler(Vector3.forward * angle);
 
             Debug.Log(rb.velocity.normalized);
 
-            Debug.DrawRay(this.transform.position, currentDirection, Color.red, 2.0f);
+            Debug.DrawRay(this.transform.position, relative, Color.red, 2.0f);
 
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                hit = Physics2D.Raycast(this.transform.position, currentDirection, 1.5f, LayerMask.GetMask("Enemy"));
+                hit = Physics2D.Raycast(this.transform.position, relative, 1.5f, LayerMask.GetMask("Enemy"));
 
 
                 if (hit.collider != null)

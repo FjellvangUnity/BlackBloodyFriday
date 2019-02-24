@@ -257,7 +257,7 @@ MonoBehaviour:
   restartGameButton: {fileID: 4918210483793966624}
   continueButton: {fileID: 1372438533371987871}
   highScoreButton: {fileID: 4918210485126310949}
-  backgroundMusic: {fileID: 8300000, guid: 50e8735ed75a7de42ba866534d9cb5d9, type: 3}
+  backgroundMusic: {fileID: 8300000, guid: f7990e788a59343499bcdd06cab1f0a5, type: 3}
 --- !u!82 &7868483447815262445
 AudioSource:
   m_ObjectHideFlags: 0
