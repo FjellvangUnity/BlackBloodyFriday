@@ -6485,6 +6485,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8624084928109528965, guid: e9ce9d0caf6809e48b76191feb957f11,
+        type: 3}
+      propertyPath: Map
+      value: 
+      objectReference: {fileID: 1457715737520479412}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9ce9d0caf6809e48b76191feb957f11, type: 3}
 --- !u!1001 &697945197
@@ -31652,6 +31657,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8624084928109528965, guid: e9ce9d0caf6809e48b76191feb957f11,
+        type: 3}
+      propertyPath: Map
+      value: 
+      objectReference: {fileID: 1457715737520479412}
     - target: {fileID: 4286508204681475818, guid: e9ce9d0caf6809e48b76191feb957f11,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -33098,6 +33108,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8624084928109528965, guid: e9ce9d0caf6809e48b76191feb957f11,
+        type: 3}
+      propertyPath: Map
+      value: 
+      objectReference: {fileID: 1457715737520479412}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9ce9d0caf6809e48b76191feb957f11, type: 3}
 --- !u!1001 &1253732635
@@ -33167,6 +33182,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8624084928109528965, guid: e9ce9d0caf6809e48b76191feb957f11,
+        type: 3}
+      propertyPath: Map
+      value: 
+      objectReference: {fileID: 1457715737520479412}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9ce9d0caf6809e48b76191feb957f11, type: 3}
 --- !u!4 &1255961784 stripped
@@ -33391,6 +33411,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8624084928109528965, guid: e9ce9d0caf6809e48b76191feb957f11,
+        type: 3}
+      propertyPath: Map
+      value: 
+      objectReference: {fileID: 1457715737520479412}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9ce9d0caf6809e48b76191feb957f11, type: 3}
 --- !u!1001 &1262276251
@@ -36720,11 +36745,16 @@ PrefabInstance:
       propertyPath: Loop
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7868483447815262445, guid: 31b819d4247cbb44fbb93e4b1bc85f81,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2641abb40282e9f4d86edfd1e2f3f8bc, type: 3}
     - target: {fileID: 7187613262844077649, guid: 31b819d4247cbb44fbb93e4b1bc85f81,
         type: 3}
       propertyPath: backgroundMusic
       value: 
-      objectReference: {fileID: 8300000, guid: f7990e788a59343499bcdd06cab1f0a5, type: 3}
+      objectReference: {fileID: 8300000, guid: 2641abb40282e9f4d86edfd1e2f3f8bc, type: 3}
     - target: {fileID: 4918210483831954153, guid: 31b819d4247cbb44fbb93e4b1bc85f81,
         type: 3}
       propertyPath: m_IsActive
@@ -38086,6 +38116,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8624084928109528965, guid: e9ce9d0caf6809e48b76191feb957f11,
+        type: 3}
+      propertyPath: Map
+      value: 
+      objectReference: {fileID: 1457715737520479412}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9ce9d0caf6809e48b76191feb957f11, type: 3}
 --- !u!1001 &1842288232
@@ -38653,6 +38688,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8624084928109528965, guid: e9ce9d0caf6809e48b76191feb957f11,
+        type: 3}
+      propertyPath: Map
+      value: 
+      objectReference: {fileID: 1457715737520479412}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9ce9d0caf6809e48b76191feb957f11, type: 3}
 --- !u!4 &1875199647 stripped
