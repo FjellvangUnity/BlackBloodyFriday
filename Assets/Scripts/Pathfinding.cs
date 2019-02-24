@@ -39,7 +39,6 @@ public class Pathfinding : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		Debug.Log("Enemy Velocity: " + rig.velocity.magnitude);
 		var mapPos =  Map.WorldToCell(transform.position);
 		var tile = Map.GetTile(mapPos);
 
@@ -94,7 +93,6 @@ public class Pathfinding : MonoBehaviour
 	{
 		if (!GoalTile.AWOKE)
 		{
-			Debug.Log("NOT AWAKE");
 			return false;
 		}
 		var goalTilePosition = GoalTile.tiles[UnityEngine.Random.Range(0, GoalTile.Count)];
@@ -105,7 +103,6 @@ public class Pathfinding : MonoBehaviour
 		Vector3Int goal = new Vector3Int();
 		var goalFound = false;
 
-		Debug.Log("starting");
 		while (frontier.Count > 0 && !goalFound)
 		{
 			var current = frontier.Dequeue();
@@ -113,7 +110,6 @@ public class Pathfinding : MonoBehaviour
 
 			foreach (var point in Neightbors(current))
 			{
-				//Debug.DrawLine(transform.position, Map.GetCellCenterWorld(point), Color.red, 5);
 
 				var tile = Map.GetTile(point);
 				if (tile != null && point == goalTilePosition)
@@ -121,7 +117,6 @@ public class Pathfinding : MonoBehaviour
 					//var rand = UnityEngine.Random.Range(0f, 1f);
 					//if (tile is GoalTile && !goalTilesVisited.Contains(point))//(GoalTile)tile).tileNumber == tilenumber)
 					//{
-						//Debug.Log("FOUND TILE:" + point);
 						//Map.SetTile(point, null);
 					goal = point;
 					goalFound = true;
@@ -134,7 +129,6 @@ public class Pathfinding : MonoBehaviour
 					break;
 					//} else if(!(tile is GoalTile))
 					//{
-					//	Debug.Log("FOUND TILE:" + point);
 					//	//Map.SetTile(point, null);
 					//	goal = point;
 					//	goalFound = true;
@@ -164,12 +158,10 @@ public class Pathfinding : MonoBehaviour
 		{
 			if(!cameFrom.TryGetValue(currentPos, out var x))
 			{
-				Debug.Log("FALSE");
 				Path = new Stack<Vector3>(); // empty it. dunno if needed
 				return false;
 			}
 			Path.Push(Map.GetCellCenterWorld(x));
-			//Debug.DrawLine(Map.GetCellCenterWorld(x), Map.GetCellCenterWorld(currentPos), Color.red, 5);
 
 			currentPos = x;
 		}
