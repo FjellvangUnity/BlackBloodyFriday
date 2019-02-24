@@ -42,7 +42,6 @@ public class PlayerMovement : MonoBehaviour
 			var horizontal = Input.GetAxisRaw("Horizontal");
 			var vertical = Input.GetAxisRaw("Vertical");
 			animator.SetFloat("moving", rb.velocity.magnitude);
-			Debug.Log(string.Format("hor {0}, vert{1}", horizontal, vertical));
             if (vertical > 0)
             {
                 rb.AddForce(Vector2.up * moveForce);
@@ -69,9 +68,6 @@ public class PlayerMovement : MonoBehaviour
             var angle = Mathf.Atan2(relative.y, relative.x) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.Euler(Vector3.forward * angle);
 
-            Debug.Log(rb.velocity.normalized);
-
-            Debug.DrawRay(this.transform.position, relative, Color.red, 2.0f);
 
             if (Input.GetKeyDown(KeyCode.Space))
             {
@@ -80,13 +76,11 @@ public class PlayerMovement : MonoBehaviour
 
                 if (hit.collider != null)
                 {
-                    Debug.Log(hit.transform.name);
                     rb.AddForce(-rb.velocity, ForceMode2D.Impulse);
                     enemyRb = hit.transform.GetComponent<Rigidbody2D>();
                     enemyRb.AddForce(currentDirection * hitForce, ForceMode2D.Impulse);
                     audioSource.Play();
                     hit = new RaycastHit2D();
-                    //Debug.Log(enemyRb.name);
                 }
             }
         }

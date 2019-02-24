@@ -48,6 +48,7 @@ public class MenuManager : MonoBehaviour
             restartGameButton.SetActive(false);
             continueButton.SetActive(false);
             highScoreButton.SetActive(true);
+            audioSource.PlayOneShot(backgroundMusic);
         }
         else if (currentScene.name == "Level1")
         {
@@ -60,7 +61,8 @@ public class MenuManager : MonoBehaviour
             startGameButton.SetActive(false);
             highScoreButton.SetActive(false);
 
-            audioSource.PlayOneShot(backgroundMusic);
+			//audioSource.volume = 0.05f;
+   //         audioSource.PlayOneShot(backgroundMusic, 2);
 
         }
 
