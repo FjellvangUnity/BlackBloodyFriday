@@ -13,6 +13,7 @@ public class Pathfinding : MonoBehaviour
 	public float timeToCompute = 5f;
 	public float timeToFindNewPos = 5f;
 	public float speed = 1;
+	public float maxSpeed = 5;
 	float timer = 0;
 	float timerToFindNewPos = 0f;
 	Stack<Vector3> Path = new Stack<Vector3>();
@@ -38,6 +39,7 @@ public class Pathfinding : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+		Debug.Log("Enemy Velocity: " + rig.velocity.magnitude);
 		var mapPos =  Map.WorldToCell(transform.position);
 		var tile = Map.GetTile(mapPos);
 
@@ -52,7 +54,11 @@ public class Pathfinding : MonoBehaviour
 			Vector3 relative = nextPos - transform.position;
 			var angle = Mathf.Atan2(relative.y, relative.x) * Mathf.Rad2Deg;
 			transform.rotation = Quaternion.Euler(Vector3.forward * angle);
-			rig.AddForce(relative * speed * Time.deltaTime, ForceMode2D.Impulse);
+
+			if (rig.velocity.magnitude < maxSpeed)
+			{
+				rig.AddForce(relative * speed * Time.deltaTime);
+			}
 			if (Path.Count == 0)
 			{
 				timer += Time.deltaTime;

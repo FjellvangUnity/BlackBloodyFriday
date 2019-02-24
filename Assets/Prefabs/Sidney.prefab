@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1362017112691373014}
   - component: {fileID: 1362017112691373018}
   m_Layer: 8
-  m_Name: Enemy
+  m_Name: Sidney
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51,7 +51,8 @@ MonoBehaviour:
   Height: 200
   timeToCompute: 1
   timeToFindNewPos: 5
-  speed: 25
+  speed: 110
+  maxSpeed: 5
 --- !u!58 &1362017112691373014
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -81,7 +82,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 10
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
