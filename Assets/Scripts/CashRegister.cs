@@ -9,7 +9,9 @@ public class CashRegister : MonoBehaviour
 	{
 		if (collision.tag.Equals("Player"))
 		{
+            ScoreManager.Instance.BuyItems();
+            ScoreManager.Instance.totalItems = 0;
 			Debug.Log("PLAYER TRIGGERED");
-	}
+	    }
 	}
 }
