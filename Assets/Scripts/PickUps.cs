@@ -17,12 +17,12 @@ public class PickUps : MonoBehaviour
         if (playerMovementController != null)
         {
 			audio.PlayOneShot(CoinSound);
-            if(ScoreManager.Instance.totalItems < ScoreManager.Instance.maxItems)
-            { 
+            //if(ScoreManager.Instance.totalItems < ScoreManager.Instance.maxItems)
+            //{ 
 				ScoreManager.Instance.AddValue(itemValue);
 				ScoreManager.Instance.totalItems++;
 				Destroy(this.gameObject,0.5f);
-            }
+            //}
         }
     }
 
