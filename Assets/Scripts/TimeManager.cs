@@ -35,7 +35,7 @@ public class TimeManager : MonoBehaviour
             MenuManager.gameIsOver = true;
             gameOverCanvas.SetActive(true);
             timerText.text = 0.ToString("n0");
-            gameOverText.text = String.Format("The store is closed! \n you are {0}$ in debt!!!", ScoreManager.score);
+            gameOverText.text = String.Format("The store is closed! \n you are {0}$ in debt!!!", ScoreManager.Instance.score);
         }
 
     }
