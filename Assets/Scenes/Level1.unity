@@ -184,6 +184,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!4 &8914750 stripped
@@ -264,6 +269,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 621729138574172719, guid: 3deda52df99c11f4c8caa7bd0bc1b742,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3deda52df99c11f4c8caa7bd0bc1b742, type: 3}
 --- !u!4 &19018334 stripped
@@ -350,6 +360,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 621729138574172719, guid: 3deda52df99c11f4c8caa7bd0bc1b742,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3deda52df99c11f4c8caa7bd0bc1b742, type: 3}
 --- !u!4 &38913010 stripped
@@ -430,6 +445,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!4 &48910830 stripped
@@ -510,6 +530,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!4 &86097312 stripped
@@ -596,6 +621,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!4 &106375763 stripped
@@ -744,6 +774,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!4 &206332845 stripped
@@ -830,6 +865,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!4 &263222484 stripped
@@ -910,6 +950,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!4 &264672282 stripped
@@ -990,6 +1035,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!4 &271173585 stripped
@@ -1070,6 +1120,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 8624084928109528966, guid: e9ce9d0caf6809e48b76191feb957f11,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9ce9d0caf6809e48b76191feb957f11, type: 3}
 --- !u!1001 &288967292
@@ -1144,6 +1199,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 621729138574172719, guid: 3deda52df99c11f4c8caa7bd0bc1b742,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3deda52df99c11f4c8caa7bd0bc1b742, type: 3}
 --- !u!4 &288967293 stripped
@@ -1230,6 +1290,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!4 &312024329 stripped
@@ -1310,6 +1375,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!4 &336826494 stripped
@@ -1396,6 +1466,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 8624084928109528966, guid: e9ce9d0caf6809e48b76191feb957f11,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9ce9d0caf6809e48b76191feb957f11, type: 3}
 --- !u!4 &371762085 stripped
@@ -1476,6 +1551,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 8624084928109528966, guid: e9ce9d0caf6809e48b76191feb957f11,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9ce9d0caf6809e48b76191feb957f11, type: 3}
 --- !u!1001 &440656317
@@ -1550,6 +1630,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 621729138574172719, guid: 3deda52df99c11f4c8caa7bd0bc1b742,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3deda52df99c11f4c8caa7bd0bc1b742, type: 3}
 --- !u!4 &455898726 stripped
@@ -1630,6 +1715,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!4 &460007576 stripped
@@ -1710,6 +1800,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!4 &474239647 stripped
@@ -1790,6 +1885,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!4 &477900676 stripped
@@ -1999,6 +2099,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 621729138574172719, guid: 3deda52df99c11f4c8caa7bd0bc1b742,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3deda52df99c11f4c8caa7bd0bc1b742, type: 3}
 --- !u!4 &520094680 stripped
@@ -2097,6 +2202,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 8624084928109528966, guid: e9ce9d0caf6809e48b76191feb957f11,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9ce9d0caf6809e48b76191feb957f11, type: 3}
 --- !u!1 &589783945
@@ -2256,6 +2366,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!1001 &638084736
@@ -2330,6 +2445,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!4 &638084737 stripped
@@ -2410,6 +2530,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!4 &641443567 stripped
@@ -2490,6 +2615,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!4 &658664658 stripped
@@ -2570,6 +2700,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 621729138574172719, guid: 3deda52df99c11f4c8caa7bd0bc1b742,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3deda52df99c11f4c8caa7bd0bc1b742, type: 3}
 --- !u!4 &661764098 stripped
@@ -2790,6 +2925,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!4 &716466688 stripped
@@ -2870,6 +3010,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!4 &727179731 stripped
@@ -3124,6 +3269,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 621729138574172719, guid: 3deda52df99c11f4c8caa7bd0bc1b742,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3deda52df99c11f4c8caa7bd0bc1b742, type: 3}
 --- !u!1001 &768342392
@@ -3198,6 +3348,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!4 &768342393 stripped
@@ -3284,6 +3439,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 621729138574172719, guid: 3deda52df99c11f4c8caa7bd0bc1b742,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3deda52df99c11f4c8caa7bd0bc1b742, type: 3}
 --- !u!1001 &813561129
@@ -3358,6 +3518,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!4 &813561130 stripped
@@ -3438,6 +3603,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!4 &829549101 stripped
@@ -3524,6 +3694,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!1001 &924983497
@@ -3598,6 +3773,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!4 &931906458 stripped
@@ -3757,6 +3937,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!4 &939215159 stripped
@@ -3837,6 +4022,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 8624084928109528966, guid: e9ce9d0caf6809e48b76191feb957f11,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9ce9d0caf6809e48b76191feb957f11, type: 3}
 --- !u!4 &945655713 stripped
@@ -3917,6 +4107,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!1001 &955798894
@@ -3991,6 +4186,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!4 &955798895 stripped
@@ -21349,6 +21549,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!1001 &996918224
@@ -21423,6 +21628,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!4 &1001337500 stripped
@@ -21503,6 +21713,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1362017113100989287, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21587,6 +21802,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 8624084928109528966, guid: e9ce9d0caf6809e48b76191feb957f11,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9ce9d0caf6809e48b76191feb957f11, type: 3}
 --- !u!4 &1023166828 stripped
@@ -21673,6 +21893,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!4 &1041974850 stripped
@@ -21759,6 +21984,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 621729138574172719, guid: 3deda52df99c11f4c8caa7bd0bc1b742,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3deda52df99c11f4c8caa7bd0bc1b742, type: 3}
 --- !u!1001 &1069833005
@@ -21833,6 +22063,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!4 &1069833006 stripped
@@ -21931,6 +22166,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 8624084928109528966, guid: e9ce9d0caf6809e48b76191feb957f11,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9ce9d0caf6809e48b76191feb957f11, type: 3}
 --- !u!4 &1108688410 stripped
@@ -22011,6 +22251,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 621729138574172719, guid: 3deda52df99c11f4c8caa7bd0bc1b742,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3deda52df99c11f4c8caa7bd0bc1b742, type: 3}
 --- !u!4 &1109992388 stripped
@@ -22165,6 +22410,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 8624084928109528966, guid: e9ce9d0caf6809e48b76191feb957f11,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9ce9d0caf6809e48b76191feb957f11, type: 3}
 --- !u!4 &1137616346 stripped
@@ -22245,6 +22495,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 621729138574172719, guid: 3deda52df99c11f4c8caa7bd0bc1b742,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3deda52df99c11f4c8caa7bd0bc1b742, type: 3}
 --- !u!1 &1149270061
@@ -22417,6 +22672,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!4 &1154828455 stripped
@@ -22579,6 +22839,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 621729138574172719, guid: 3deda52df99c11f4c8caa7bd0bc1b742,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3deda52df99c11f4c8caa7bd0bc1b742, type: 3}
 --- !u!1001 &1182546551
@@ -22653,6 +22918,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 8624084928109528966, guid: e9ce9d0caf6809e48b76191feb957f11,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9ce9d0caf6809e48b76191feb957f11, type: 3}
 --- !u!1001 &1229255256
@@ -22727,6 +22997,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!4 &1229255257 stripped
@@ -22942,6 +23217,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!4 &1276610655 stripped
@@ -23022,6 +23302,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 621729138574172719, guid: 3deda52df99c11f4c8caa7bd0bc1b742,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3deda52df99c11f4c8caa7bd0bc1b742, type: 3}
 --- !u!4 &1278988561 stripped
@@ -23210,6 +23495,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 621729138574172719, guid: 3deda52df99c11f4c8caa7bd0bc1b742,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3deda52df99c11f4c8caa7bd0bc1b742, type: 3}
 --- !u!4 &1305092036 stripped
@@ -23288,7 +23578,7 @@ PrefabInstance:
     - target: {fileID: 6185950437588960406, guid: 1f30d0950e83a47559de8f277a8a65ef,
         type: 3}
       propertyPath: hitForce
-      value: 300
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f30d0950e83a47559de8f277a8a65ef, type: 3}
@@ -23370,6 +23660,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!4 &1387395320 stripped
@@ -23450,6 +23745,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!1001 &1487920452
@@ -23524,6 +23824,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!1001 &1497833559
@@ -23598,6 +23903,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 8624084928109528966, guid: e9ce9d0caf6809e48b76191feb957f11,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9ce9d0caf6809e48b76191feb957f11, type: 3}
 --- !u!1001 &1499240689
@@ -23672,6 +23982,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!4 &1499240690 stripped
@@ -23752,6 +24067,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 621729138574172719, guid: 3deda52df99c11f4c8caa7bd0bc1b742,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3deda52df99c11f4c8caa7bd0bc1b742, type: 3}
 --- !u!4 &1499336567 stripped
@@ -23918,6 +24238,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!1001 &1546533041
@@ -23992,6 +24317,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 8624084928109528966, guid: e9ce9d0caf6809e48b76191feb957f11,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9ce9d0caf6809e48b76191feb957f11, type: 3}
 --- !u!4 &1546533042 stripped
@@ -24207,6 +24537,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 8624084928109528966, guid: e9ce9d0caf6809e48b76191feb957f11,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9ce9d0caf6809e48b76191feb957f11, type: 3}
 --- !u!1001 &1591974342
@@ -24281,6 +24616,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 8624084928109528966, guid: e9ce9d0caf6809e48b76191feb957f11,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9ce9d0caf6809e48b76191feb957f11, type: 3}
 --- !u!4 &1591974343 stripped
@@ -24361,6 +24701,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 621729138574172719, guid: 3deda52df99c11f4c8caa7bd0bc1b742,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3deda52df99c11f4c8caa7bd0bc1b742, type: 3}
 --- !u!4 &1601986229 stripped
@@ -24441,6 +24786,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!1001 &1632102524
@@ -24515,6 +24865,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!1001 &1635744421
@@ -24805,6 +25160,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!1001 &1679816482
@@ -24879,6 +25239,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!1001 &1716984527
@@ -24953,6 +25318,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!4 &1750560148 stripped
@@ -25045,6 +25415,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 621729138574172719, guid: 3deda52df99c11f4c8caa7bd0bc1b742,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3deda52df99c11f4c8caa7bd0bc1b742, type: 3}
 --- !u!1001 &1830610825
@@ -25119,6 +25494,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!1001 &1842288232
@@ -25193,6 +25573,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 621729138574172719, guid: 3deda52df99c11f4c8caa7bd0bc1b742,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3deda52df99c11f4c8caa7bd0bc1b742, type: 3}
 --- !u!4 &1842288233 stripped
@@ -25273,6 +25658,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 621729138574172719, guid: 3deda52df99c11f4c8caa7bd0bc1b742,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3deda52df99c11f4c8caa7bd0bc1b742, type: 3}
 --- !u!1001 &1861431030
@@ -25347,6 +25737,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!1001 &1899016929
@@ -25421,6 +25816,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 621729138574172719, guid: 3deda52df99c11f4c8caa7bd0bc1b742,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3deda52df99c11f4c8caa7bd0bc1b742, type: 3}
 --- !u!4 &1899016930 stripped
@@ -25646,6 +26046,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!4 &1927923102 stripped
@@ -25726,6 +26131,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!4 &1991658718 stripped
@@ -25928,6 +26338,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 621729138574172719, guid: 3deda52df99c11f4c8caa7bd0bc1b742,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3deda52df99c11f4c8caa7bd0bc1b742, type: 3}
 --- !u!4 &2023918076 stripped
@@ -26008,6 +26423,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!1001 &2112292908
@@ -26082,6 +26502,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!1001 &2120854228
@@ -26156,6 +26581,11 @@ PrefabInstance:
       propertyPath: Map
       value: 
       objectReference: {fileID: 1457715737520479412}
+    - target: {fileID: 1362017112691373018, guid: 7bf3fa41230f3ae4a87a1112d4682fbb,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bf3fa41230f3ae4a87a1112d4682fbb, type: 3}
 --- !u!1 &1457715735991919432
@@ -26787,7 +27217,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1457715737171186901}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
