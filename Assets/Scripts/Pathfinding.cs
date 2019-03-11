@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Assets.Scripts.Data;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -88,6 +89,78 @@ public class Pathfinding : MonoBehaviour
 			}
 		}
 	}
+	private int Heuistic(Vector3Int a, Vector3Int b)
+	{
+		return Mathf.Abs(a.x - b.x) + Mathf.Abs(a.y - b.y);
+	}
+	class CoordWithWeight : IComparable
+	{
+		public Vector3Int Coord;
+		int Weight;
+		public CoordWithWeight(Vector3Int coord, int weight)
+		{
+			Coord = coord;
+			Weight = weight;
+		}
+		public int CompareTo(CoordWithWeight other)
+		{
+			return Weight.CompareTo(other.Weight);	
+		}
+
+		public int CompareTo(object obj)
+		{
+			return Weight.CompareTo(obj);
+		}
+	}
+	public bool ComputeGreedy(Vector3Int start, Vector3Int goal)
+	{
+		var frontier = new PriorityQueue<CoordWithWeight>();
+		var visisted = new Dictionary<Vector3Int, bool>();
+		var cameFrom = new Dictionary<Vector3Int, Vector3Int>();
+		var goalFound = false;
+		frontier.Enqueue(new CoordWithWeight(start, 0));
+		while (frontier.Count > 0 && !goalFound)
+		{
+			var current = frontier.Dequeue();
+
+			visisted[current.Coord] = true;
+
+			foreach (var point in Neightbors(current.Coord))
+			{
+				Debug.DrawLine(current.Coord, point, Color.red);
+				var priority = Heuistic(goal, point);
+				var tile = Map.GetTile(point);
+				if (point == goal)
+				{
+					//goal = point;
+					goalFound = true;
+					cameFrom[point] = current.Coord;
+					break;
+				}
+
+				if (visisted.TryGetValue(point, out var x) || tile.GetType() == typeof(WallTile) || point.x > Width || point.y > Height)
+				{
+					continue;
+				}
+
+				frontier.Enqueue(new CoordWithWeight(point, priority));
+				visisted[point] = true;
+
+				cameFrom[point] = current.Coord;
+			}
+		}
+
+		var next = goal;
+
+		while (next != start)
+		{
+			Path.Push(next);
+			next = cameFrom[next];
+		}
+		Path.Push(start);
+		return true;
+	}
+
 
 	public bool ComputePath(Vector3Int startPosition, Type toFind)
 	{
@@ -114,10 +187,6 @@ public class Pathfinding : MonoBehaviour
 				var tile = Map.GetTile(point);
 				if (tile != null && point == goalTilePosition)
 				{
-					//var rand = UnityEngine.Random.Range(0f, 1f);
-					//if (tile is GoalTile && !goalTilesVisited.Contains(point))//(GoalTile)tile).tileNumber == tilenumber)
-					//{
-						//Map.SetTile(point, null);
 					goal = point;
 					goalFound = true;
 					cameFrom[point] = current;
@@ -127,19 +196,10 @@ public class Pathfinding : MonoBehaviour
 						goalTilesVisited = new List<Vector3Int>();
 					}
 					break;
-					//} else if(!(tile is GoalTile))
-					//{
-					//	//Map.SetTile(point, null);
-					//	goal = point;
-					//	goalFound = true;
-					//	cameFrom[point] = current;
-					//	break;
-					//}
 				}
 
 				if (visisted.TryGetValue(point, out var x) || tile == null || tile.GetType() == typeof(WallTile) || point.x > Width || point.y > Height)
 				{
-					// out of bounds, we've been here, or we hit a wall
 					continue;
 				}
 
