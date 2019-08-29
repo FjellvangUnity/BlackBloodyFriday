@@ -93,7 +93,7 @@ public class Pathfinding : MonoBehaviour
 	{
 		return Mathf.Abs(a.x - b.x) + Mathf.Abs(a.y - b.y);
 	}
-	class CoordWithWeight : IComparable
+	class CoordWithWeight : IComparable<CoordWithWeight>
 	{
 		public Vector3Int Coord;
 		int Weight;

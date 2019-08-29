@@ -25,7 +25,7 @@ namespace Assets.Scripts.Pathfinding
 			Debug.Log(GoalTile.Count);
 			if (GoalTile.Count > 0 && Path.Count <= 0)
 			{
-				ComputeGreedy(Map.WorldToCell(transform.position), Map.WorldToCell(GoalTile.tiles[0]));
+				ComputeAStar(Map.WorldToCell(transform.position), Map.WorldToCell(GoalTile.tiles[0]));
 			}
 			else if (Path.Count > 0)
 			{
@@ -53,22 +53,19 @@ namespace Assets.Scripts.Pathfinding
 						if (i != 0 && j != 0)
 						{
 							yield return new CoordWithWeight(point, 2);
-						}
+						} else {
+                            yield return new CoordWithWeight(point, 1);
+                        }
 
-						yield return new CoordWithWeight(point, 1);
 					}
 				}
 			}
-			//yield return new Vector3Int(current.x+1, current.y, 0);
-			//yield return new Vector3Int(current.x, current.y+1, 0);
-			//yield return new Vector3Int(current.x, current.y-1, 0);
-			//yield return new Vector3Int(current.x-1, current.y, 0);
 		}
 		private double Heuistic(Vector3Int a, Vector3Int b)
 		{
 			return Mathf.Abs(a.x - b.x) + Mathf.Abs(a.y - b.y);
 		}
-		public class CoordWithWeight : IComparable
+		public class CoordWithWeight : IComparable<CoordWithWeight>
 		{
 			public Vector3Int Coord;
 			public double Weight;
@@ -87,7 +84,7 @@ namespace Assets.Scripts.Pathfinding
 				return Weight.CompareTo((obj as CoordWithWeight).Weight);
 			}
 		}
-		public bool ComputeGreedy(Vector3Int start, Vector3Int goal)
+		public bool ComputeAStar(Vector3Int start, Vector3Int goal)
 		{
 			var frontier = new PriorityQueue<CoordWithWeight>();
 			var cameFrom = new Dictionary<Vector3Int, Vector3Int>();
@@ -102,11 +99,10 @@ namespace Assets.Scripts.Pathfinding
 				foreach (var point in Neightbors(current.Coord))
 				{
 					var newCost = costSoFar[current.Coord] + point.Weight;
-					Debug.DrawLine(Map.GetCellCenterWorld(current.Coord), Map.GetCellCenterWorld(point.Coord), Color.red, 2);
+					//Debug.DrawLine(Map.GetCellCenterWorld(current.Coord), Map.GetCellCenterWorld(point.Coord), Color.red, 2);
 					var tile = Map.GetTile(point.Coord);
 					if (point.Coord == goal)
 					{
-						//goal = point;
 						goalFound = true;
 						cameFrom[point.Coord] = current.Coord;
 						break;

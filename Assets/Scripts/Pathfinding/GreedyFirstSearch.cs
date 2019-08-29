@@ -53,7 +53,7 @@ namespace Assets.Scripts.Pathfinding
 		{
 			return Mathf.Abs(a.x - b.x) + Mathf.Abs(a.y - b.y);
 		}
-		class CoordWithWeight : IComparable
+		class CoordWithWeight : IComparable<CoordWithWeight>
 		{
 			public Vector3Int Coord;
 			int Weight;
@@ -71,7 +71,8 @@ namespace Assets.Scripts.Pathfinding
 			{
 				return Weight.CompareTo((obj as CoordWithWeight).Weight);
 			}
-		}
+
+        }
 		public bool ComputeGreedy(Vector3Int start, Vector3Int goal)
 		{
 			var frontier = new PriorityQueue<CoordWithWeight>();
